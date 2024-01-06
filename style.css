@@ -164,13 +164,15 @@ main {
 }
 
 main .container .player {
-  background: #ffffff77;
+  background: #ffffff93;
+  opacity: 0.75;
   min-height: 45vh;
   min-height: 45svh;
   display: flex;
   flex-direction: column;
   gap: 4rem;
   align-items: center;
+  border-radius: 12px;
 }
 
 main {
@@ -267,3 +269,21 @@ footer {
     font-size: 1rem;
   }
 }
+
+.hidden {
+  display: none;
+}
+
+.player--active {
+  opacity: 1;
+  background-color: #08e6ff;
+}
+
+/* .player--winner {
+  background-color: var(--main-color);
+}
+
+.player--winner .name {
+  font-weight: 700;
+  background: orangered;
+} */
