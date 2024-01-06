@@ -1,9 +1,84 @@
-<mxfile host="app.diagrams.net" modified="2024-01-06T14:22:07.850Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" version="22.1.17" etag="bWR8jJ9mBZN2uOaqE_RB" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-06T14:57:02.375Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="yQqGzXbbFE8jFZaTjpC2" version="22.1.17" type="github">
   <diagram name="Page-1" id="ZF_J5g5vlsZJm-P8UBtU">
-    <mxGraphModel>
+    <mxGraphModel dx="954" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QuZcpAZUgYwQ85NheVxS-1" target="QuZcpAZUgYwQ85NheVxS-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-1" value="generer une mise 100% RandoM (entre 1 et 6)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="160" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QuZcpAZUgYwQ85NheVxS-2" target="QuZcpAZUgYwQ85NheVxS-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-2" value="ajouter le score courant au score total" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="160" y="360" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QuZcpAZUgYwQ85NheVxS-3" target="QuZcpAZUgYwQ85NheVxS-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-3" value="remettre tout les scores à 0" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="160" y="610" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QuZcpAZUgYwQ85NheVxS-4" target="QuZcpAZUgYwQ85NheVxS-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-4" value="joueur lance le dé" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QuZcpAZUgYwQ85NheVxS-5" target="QuZcpAZUgYwQ85NheVxS-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-5" value="le joueur garde la cagnotte" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry y="360" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QuZcpAZUgYwQ85NheVxS-6" target="QuZcpAZUgYwQ85NheVxS-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-6" value="le joueur redémarre le Jeu dès le début" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry y="610" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QuZcpAZUgYwQ85NheVxS-7" target="QuZcpAZUgYwQ85NheVxS-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-7" value="afficher la mise (du dé)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="334" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-9" value="Recommencer la partie : &lt;b&gt;le premier joueur commence la partie&lt;/b&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="326" y="602" width="96" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-10" value="le joueur AcTuel a Gagné ^__^ et le 2ième a automatiquement perdu la partie" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#33FF33;" vertex="1" parent="1">
+          <mxGeometry x="239.5" y="480" width="269" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QuZcpAZUgYwQ85NheVxS-11" target="QuZcpAZUgYwQ85NheVxS-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QuZcpAZUgYwQ85NheVxS-11" target="QuZcpAZUgYwQ85NheVxS-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-11" value="le Score est t-il &amp;gt;=100" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="360" width="133" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QuZcpAZUgYwQ85NheVxS-12" target="QuZcpAZUgYwQ85NheVxS-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QuZcpAZUgYwQ85NheVxS-12" target="QuZcpAZUgYwQ85NheVxS-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-12" value="est t-il un 1" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="160" width="133" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-13" value="changer de joueur" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="486.5" y="360" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-14" value="ajouter la mise au score actuel (current score)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="630" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QuZcpAZUgYwQ85NheVxS-15" value="afficher le nouveau score" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="747" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
