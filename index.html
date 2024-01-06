@@ -3,6 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- linker le GrAnD, l'UniQue l'incontournable boXicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- linker le premier font: Mochiy Pop One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- linker le deuxième font: Caveat Brush -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Mochiy+Pop+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- linker un 3rd font : Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
     <!-- linker ma feuille de Style -->
     <link rel="stylesheet" href="style.css" />
     <title>
@@ -10,6 +38,47 @@
     </title>
   </head>
   <body>
+    <main>
+      <div class="container">
+        <div class="focused-container">
+          <section class="player player--0 player--active">
+            <h1>player 1</h1>
+            <h2 id="player-score-P0">43</h2>
+            <div class="current-score-P0">
+              <p>current</p>
+              <span>11</span>
+            </div>
+          </section>
+
+          <section class="player player--1">
+            <h1>player 2</h1>
+            <h2 id="player-score-P1">72</h2>
+            <div class="current-score-P1">
+              <p>current</p>
+              <span>0</span>
+            </div>
+          </section>
+          <div class="dice" id="dice-{$}">
+            <img
+              src="assets/img/dés-en-vert-palette-de-couleurs/dice-4.png"
+              alt="dice-img"
+            />
+          </div>
+        </div>
+        <section class="buttons">
+          <button id="new-game">
+            <i class="bx bx-message-alt-add"></i> new game
+          </button>
+          <div class="btn-div">
+            <button id="roll-dice">
+              <i class="bx bx-play-circle"></i> roll dice
+            </button>
+            <button id="hold"><i class="bx bxs-hourglass-top"></i> hold</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
     <!-- linker ma feuille de Script Js -->
     <script src="script.js"></script>
   </body>
