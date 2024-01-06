@@ -76,19 +76,27 @@ main {
 }
 
 /* les 3 boutons */
-#new-game,
-#roll-dice,
-#hold {
+.btn {
   position: absolute;
-  font-size: 1rem;
+  font-size: 1.2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0.6rem;
   outline: none;
   border-radius: 6px;
   background: transparent;
   cursor: pointer;
+  gap: 0.6rem;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  font-size: 1.3rem;
+  transform: scale(1.1);
+  border: 0.15rem solid white;
+  color: var(--secondary-color);
+  /* font-weight: bolder; */
 }
 
 #new-game {
@@ -98,7 +106,7 @@ main {
 }
 #hold {
   bottom: 6rem;
-  left: 51%;
+  left: 51.25%;
   transform: translateX(-3rem);
 }
 
@@ -106,16 +114,15 @@ main {
   bottom: 10rem;
   left: 50%;
   transform: translateX(-3rem);
-  transition: background-color 0.3s ease;
 }
 
 /* #roll-dice:hover {
   + .dice img {
     animation: bounce 1s infinite;
   }
-} */
+}
 
-/* #roll-dice:hover ~ .dice img {
+#roll-dice:hover ~ .dice img {
   animation: bounce 1s infinite;
 }
 
@@ -142,7 +149,7 @@ main {
   margin: 4rem auto;
 }
 
-h1 {
+.name {
   text-transform: capitalize;
   font-size: 2.9rem;
   font-family: var(--3rd-font);
@@ -150,19 +157,15 @@ h1 {
 }
 
 .player {
-  #player-score-P0,
-  #player-score-P1 {
+  #score--P0,
+  #score--P1 {
     color: orangered;
-  }
-}
-
-.container {
-  .player--0 {
+    font-size: 4.3rem;
   }
 }
 
 main .container .player {
-  background: #ffffffa6;
+  background: #ffffff77;
   min-height: 45vh;
   min-height: 45svh;
   display: flex;
@@ -183,19 +186,18 @@ main {
   }
 }
 
-.current-score-P0,
-.current-score-P1 {
+.current {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.6rem;
-  padding: 1rem;
-  border: 0.1rem solid var(--secondary-color);
+  padding: 1.2rem;
+  border: 0.15rem solid var(--secondary-color);
   background-color: #152039;
   color: #fff;
   font-size: 1.2rem;
   border-radius: 6px;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   p {
     text-transform: capitalize;
     font-family: var(--3rd-font);
@@ -203,14 +205,15 @@ main {
   }
   & span {
     color: orange;
+    font-size: 1.2rem;
   }
 }
 
 .dice {
   position: absolute;
   top: 30%;
-  left: 50%;
-  transform: translate(-50px);
+  left: 47%;
+  /* transform: translate(-50%,-50%); */
   background: rgba(255, 255, 255, 0.384);
   border-radius: 20px;
   /* border: 0.2rem solid #152039; */
@@ -219,12 +222,31 @@ main {
 
 .dice {
   img {
-    width: 6rem;
+    width: 6.5rem;
+    transition: transform 0.3s ease;
   }
 }
 
-.dice {
-  img.bouce {
-    animation: bounce 1s infinite;
+/* #dice-img {
+  width: 7rem;
+  transition: transform 0.3s ease;
+} */
+@keyframes sauter-as-a-lapin {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
+  40% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+}
+
+#roll-dice:hover ~ #dice-img {
+  animation: sauter-as-a-lapin 1s infinite;
 }
