@@ -57,7 +57,7 @@ const newGame = function () {
 
   /*====DRY ===*/
 };
-newGame();
+// newGame();
 /* =========================La logiQue du btn NeW GaMe ============================= */
 // new_game_btn.addEventListener('click', () => {
 //   current = 0;
@@ -90,10 +90,16 @@ roll_dice_btn.addEventListener('click', () => {
     // 2 **enlever la class .hidden de l'image du dé:
     diceEl.classList.remove('hidden');
 
-    //3 **afficher le dé qui match notre random mise:
+    //3 **afficher le dé qui match notre randomise number generé par JS:
     diceEl.src = `dice-${randomDicePick}.png`;
     console.log(diceEl);
     console.log(diceEl.src);
+
+    //=========================> j'arrive pas à le faire changer de photo de dé !!!
+
+    //=========================> j'arrive pas à le faire changer de photo de dé !!!
+
+    //=========================> j'arrive pas à le faire changer de photo de dé !!!
 
     // // 5-l'afficher à notre cagnotte actuelle current (mais attention uniquement du joueur avec class:.active)
     // current_score.textContent = current;
@@ -123,7 +129,7 @@ hold_btn.addEventListener('click', () => {
     // console.log(score(activePlayer));
 
     //Voir si un des 2 joueurs arrive à cumuler 100 pts en premier => sera le Gagnant du Jeu
-    if (score[activePlayer] >= 35) {
+    if (score[activePlayer] >= 100) {
       ViensJouerAvecMoi = false;
 
       diceEl.classList.add('hidden');
@@ -142,17 +148,3 @@ hold_btn.addEventListener('click', () => {
   }
 });
 //Fin du jeu
-
-//player0
-//player1
-
-/* ========Start ela va être la loGiQue FiNAle du Jeu========= */
-/* Si le Joueur joue : */
-// if (playing) {
-//   // le joueur lance le dé et tente sa chance:
-//   // le joueur garde sa cagnotte (sa ou ses mises additionnées):
-// } else {
-//   //GAME Over  => le joueur gagnant prends la classe .winner + tous les compteur se mettent à 0 plus aucun bouton qui marche => fin du jeu
-// }
-
-/* ========End ela va être la loGiQue FiNAle du Jeu========= */
