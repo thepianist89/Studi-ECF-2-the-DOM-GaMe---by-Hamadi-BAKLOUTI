@@ -57,7 +57,7 @@ const newGame = function () {
 
   /*====DRY ===*/
 };
-// newGame();
+newGame();
 /* =========================La logiQue du btn NeW GaMe ============================= */
 // new_game_btn.addEventListener('click', () => {
 //   current = 0;
